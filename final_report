@@ -1,0 +1,35 @@
+Due Monday May 12th (Week 16)
+
+The final project is made up of two components: report and code.
+
+You should submit a report of your code that is divided up into 5 "chapters" of the MIPS Pipeline (i.e. Fetch, Decode, Execute, Memory, and Writeback) and a Conclusion. In total there should be 6 sections. 
+
+Each chapter consists of the following
+
+Overview of the stage noting :
+its purpose
+its components
+connections between components
+expected inputs and outputs across the stage
+(e.g. the outputs  of the Fetch stage (e.g. next instruction and instruction data) get passed through the IF/ID latch to be the inputs of the Decode stage)
+Code
+Create .v files for your components or modules within that stage
+Create a .v file of all the components tied together (e.g. Fetch.v) 
+Create a testbench for that stage module.  Run timing diagrams to gain behavioral understanding of your components 
+Alternatively, if you found that the stage's testbench fails or is incomplete, you can create and run testbenches for individual components to justify that the stage should work 
+Be clear in your report if you take this route for the particular stage
+Screenshot
+Screenshot your code of each component and the completed stage. Alternatively, you can provide a link to your Github or online repository with your code.
+Do not expect your instructor to download Verilog files 
+Provide explanations of the component and expected data types (e.g. bit size, values)
+Screenshots of your timing diagrams for your test benches.
+Explain the values and why they make sense
+Section 6. Conclusion
+
+The implementation of the lab is a simple MIPS pipeline. Refer to the lecture to describe ways to improve the following:
+
+Protection against hazards (i.e.structural, data, and control)
+Instruction reordering
+Write-through and/or write back improvements 
+Make sure your solution describes modifications or additions of components and where they would be placed within the pipeline. Diagrams may help. 
+
